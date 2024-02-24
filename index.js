@@ -12,19 +12,19 @@ function destructivelyRemoveLastCat(name) {
 function destructivelyRemoveFirstCat(name) {
     cats.shift();
 }
-function appendCat(name) {
-   const copyOfCats = [...cats.slice(), name];
+function appendCat(meow) {
+   const copyOfCats = [...cats.slice(), meow];
    return copyOfCats;
 }
-function prependCat(name) {
-    const copyOfCats = [name, ...cats.slice()];
+function prependCat(woof) {
+    const copyOfCats = [woof, ...cats.slice()];
     return copyOfCats;
 }
-function removeFirstCat(name) {
+function removeFirstCat() {
     const copyOfCats = cats.slice(1);
     return copyOfCats;
 }
-function removeLastCat(name) {
+function removeLastCat() {
     const copyOfCats = cats.slice(0,2);
     return copyOfCats;
 }
